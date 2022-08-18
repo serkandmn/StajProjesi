@@ -1,0 +1,73 @@
+﻿@model webb.Models.kisibilgileri
+@{
+    ViewData["Title"] = "update";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BilgiFormu güncelle</title>
+    <style type="text/css">
+        .txt {
+            width:100px;
+            height:20px;
+            margin-left:100px;
+        }    </style>
+</head>
+<body>
+    <h1 class="display-4">REHBERİM</h1>
+    <form asp-action="update" method="post">
+        <div class="container">
+            <div class="col-md-6">
+                <table class="table">
+                    <tr>
+                        <td>
+                            <label asp-for="Ad">Adınız </label>
+                        </td>
+                        <td>
+                            <input asp-for="Ad" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label asp-for="Soyad">Soyadınız </label>
+                        </td>
+                        <td>
+                            <input asp-for="Soyad" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label asp-for="TelNo">Telefon numaranız </label>
+                        </td>
+                        <td>
+                            <input asp-for="TelNo" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label asp-for="Adres">Adresiniz </label>
+                        </td>
+                        <td>
+                            <input asp-for="Adres" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" class="btn btn-success">kaydet</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </form>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿
+@model webb.Models.kisibilgileri
+@{
+    ViewData["Title"] = "rehber";
+    //Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+        <head>
+            <meta name="viewport" content="width=device-width" />
+            <title>BilgiFormu</title>
+        </head>
+        <body>
+            <h1 class="display-4">REHBERİM</h1>
+            <form asp-action="BilgiFormu" method="post">
+                <div class="container">
+                    <div class="col-md-6">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <label asp-for="Ad">Adınız </label>
+                                </td>
+                                <td>
+                                    <input asp-for="Ad" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label asp-for="Soyad">Soyadınız </label>
+                                </td>
+                                <td>
+                                    <input asp-for="Soyad" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label asp-for="TelNo">Telefon numaranız </label>
+                                </td>
+                                <td>
+                                    <input asp-for="TelNo" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label asp-for="Adres">Adresiniz </label>
+                                </td>
+                                <td>
+                                    <input asp-for="Adres" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit" class="btn btn-success">kaydet</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                @*<div>
+                    <label asp-for="Ad">Adınız </label>
+                    <input asp-for="Ad" />
+                </div>
+                <div>
+                    <label asp-for="Soyad">Soyadınız </label>
+                    <input asp-for="Soyad" />
+                </div>
+                <div>
+                    <label asp-for="TelNo">Telefon numaranız </label>
+                    <input asp-for="TelNo" />
+                </div>
+                <div>
+                    <label asp-for="Adres">Adresiniz</label>
+                    <input asp-for="Adres" />
+                </div>
+                <button type="submit">kaydet</button>*@
+
+            </form>
+
+
+
+
+        </body>
+</html>
