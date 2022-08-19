@@ -1,0 +1,52 @@
+﻿@model webb.Models.Login
+@{
+    ViewData["Title"] = "Entry";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+
+    <form asp-action="Entry" method="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <label asp-for="KullaniciAdi">Kullanıcı Adı </label>
+                            </td>
+                            <td>
+                                <input asp-for="KullaniciAdi" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label asp-for="Sifre">Şifreniz </label><br />
+                            </td>
+                            <td>
+                                <input asp-for="Sifre" type="password" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button type="submit" class="btn btn-success">kaydet</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+
+</body>
+</html>

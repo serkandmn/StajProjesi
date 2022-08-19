@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using webb.Models;
 
 namespace webb
@@ -16,5 +17,6 @@ namespace webb
         }
 
         public DbSet<kisibilgileri> bilgis { get; set; }
+        public DbSet<Login> Logins { get; set; }
     }
 }

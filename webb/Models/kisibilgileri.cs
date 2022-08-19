@@ -8,4 +8,5 @@
         public string Soyad { get; set; }
         public string Adres { get; set; }
     }
+
 }

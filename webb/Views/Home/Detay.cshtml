@@ -18,21 +18,30 @@
     <tbody>
         @foreach (var @item in Model)
         {
-        <tr>
-            <td>@item.Id</td>
-            <td>@item.Ad</td>
-            <td>@item.Soyad</td>
-            <td>@item.TelNo</td>
-            <td>@item.Adres</td>
-            <td>
-                <a asp-action="update" asp-controller="Home" asp-route-Id="@item.Id" class="btn btn-primary">Güncelle </a>
-            </td>
-            <td>
-                <a asp-action="remove" asp-controller="Home" asp-route-Id="@item.Id" onclick="return confirm('Silinsin mi?')" class="btn btn-dark">Sil </a>
-            </td>
-            <td></td>
-        </tr>
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Ad</td>
+                <td>@item.Soyad</td>
+                <td>@item.TelNo</td>
+                <td>@item.Adres</td>
+                <td>
+                    <a asp-action="update" asp-controller="Home" asp-route-Id="@item.Id" class="btn btn-primary">Güncelle </a>
+                </td>
+                <td>
+                    <a asp-action="remove" asp-controller="Home" asp-route-Id="@item.Id" onclick="return confirm('Silinsin mi?')" class="btn btn-dark">Sil </a>
+                </td>
+                <td>
+                </td>
+
+
+
+            </tr>
+
+
         }
 
     </tbody>
+    <td colspan="2">
+        <button type="submit" class="btn btn-success">excele aktar</button>
+    </td>
 </table>
